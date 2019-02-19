@@ -47,4 +47,7 @@ public class HelloRestController {
 	public Hello get(@PathVariable Long helloid) {
 		return this.helloRepository.findOne(helloid);
 	}
+
+	@RequestMapping(value = "/special/{name}", method = RequestMethod.GET)
+	public String special(@PathVariable String name) {return "This is a special greeting to you - " + name;}
 }
