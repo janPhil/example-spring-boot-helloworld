@@ -49,5 +49,5 @@ public class HelloRestController {
 	}
 
 	@RequestMapping(value = "/special/{name}", method = RequestMethod.GET)
-	public String special(@PathVariable String name) {return "This is a special greeting to you - " + name;}
+	public String special(@PathVariable String name) {return "This is a webhook greeting to you - " + name;}
 }
